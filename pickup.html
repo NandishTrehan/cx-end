@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick Up</title>
+</head>
+
+<body>
+    <div>
+        <!-- Header -->
+        <div class="first-head">
+            <div>
+                <h2>Order No : 50002438</h2>
+            </div>
+            <div class="placed-date">
+                <h3>Placed On: 17th Nov 2020</h3>
+            </div>
+        </div>
+        <div class="pick-head">
+            <h2>Pickup Request Form</h2>
+        </div>
+
+        <!-- Table Area -->
+        <div class="table">
+            <h3 class="heading">Select Your Products:</h3>
+            <table class="table-width">
+                <tr class="table-head">
+                    <th class="select-width">Select</th>
+                    <th>Product Name</th>
+                    <th class="quantity-width">Quantity</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>Beige Single Fabric Wing Bed 6X3</td>
+                    <td>
+                        <label for="quantity"></label>
+                        <select name="quantity">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>Single Mattress 6x3</td>
+                    <td>
+                        <label for="quantity"></label>
+                        <select name="quantity">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>Single bed Alpha 6x3</td>
+                    <td>
+                        <label for="quantity"></label>
+                        <select name="quantity">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>Single Mattress 6x3</td>
+                    <td>
+                        <label for="quantity"></label>
+                        <select name="quantity">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- Address Area -->
+        <div class="address">
+            <h3 class="heading">Select Your Address:</h3>
+            <div class="boxes">
+                <div class="box1">
+                    <h4 style="font-size: 20px;">Default Address</h4>
+                    <p>Address Line 1</p>
+                    <p>Address Line 2</p>
+                </div>
+                <div class="box2">
+                    <h4 style="font-size: 20px;">Add New Address</h4>
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                    <path fill="none" d="M13.388,9.624h-3.011v-3.01c0-0.208-0.168-0.377-0.376-0.377S9.624,6.405,9.624,6.613v3.01H6.613c-0.208,0-0.376,0.168-0.376,0.376s0.168,0.376,0.376,0.376h3.011v3.01c0,0.208,0.168,0.378,0.376,0.378s0.376-0.17,0.376-0.378v-3.01h3.011c0.207,0,0.377-0.168,0.377-0.376S13.595,9.624,13.388,9.624z M10,1.344c-4.781,0-8.656,3.875-8.656,8.656c0,4.781,3.875,8.656,8.656,8.656c4.781,0,8.656-3.875,8.656-8.656C18.656,5.219,14.781,1.344,10,1.344z M10,17.903c-4.365,0-7.904-3.538-7.904-7.903S5.635,2.096,10,2.096S17.903,5.635,17.903,10S14.365,17.903,10,17.903z"></path>
+                </svg>
+                </div>
+            </div>
+        </div>
+        <!-- Date Area -->
+        <div class="date-area">
+            <h3 class="heading">Select Pickup Date</h3>
+            <label style="padding-left: 18px;" for="PickUp">Pickup Date:</label>
+            <input style="margin-left: -10px;" type="date" id="Pickup" name="pickup">
+            <div style="display: flex; margin-top:0px;">
+                <h4>Note:</h4>
+                <p style="margin-left: -10px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+            </div>
+        </div>
+        <button class="button-raise">Raise Pickup</button>
+    </div>
+</body>
+
+<style>
+    * {
+        margin: 15px;
+    }
+    
+    .first-head {
+        display: flex;
+        margin: 13px;
+        height: 80px;
+    }
+    
+    .placed-date {
+        padding: 4px 0 0 59%;
+    }
+    
+    .pick-head {
+        text-align: center;
+    }
+    
+    .table {
+        text-align: center;
+        background-color: whitesmoke;
+    }
+    
+    .table-head {
+        font-size: 20px;
+        background-color: #75d0c0;
+        height: 40px;
+    }
+    
+    .heading {
+        background-color: #dddddd;
+        width: 22%;
+        padding: 5px 0 5px 18px;
+        text-align: left;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    
+    .select-width {
+        width: 15%;
+    }
+    
+    .quantity-width {
+        width: 15%;
+    }
+    
+    .table-width {
+        width: 98%;
+    }
+    
+    .box1 {
+        width: 256px;
+        height: 252px;
+        text-align: center;
+        box-shadow: 4px 6px 18px grey;
+        border-radius: 10px;
+    }
+    
+    .box1:hover {
+        background-color: #dddddd;
+    }
+    
+    .address {
+        background-color: whitesmoke;
+    }
+    
+    .box2 {
+        width: 200px;
+        height: 252px;
+        text-align: center;
+        box-shadow: 4px 6px 18px grey;
+        border-radius: 10px;
+    }
+    
+    .box2:hover {
+        background-color: #dddddd;
+    }
+    
+    .boxes {
+        display: flex;
+    }
+    
+    .svg-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .svg-icon path,
+    .svg-icon polygon,
+    .svg-icon rect {
+        fill: #080808;
+    }
+    
+    .svg-icon circle {
+        stroke: #030303;
+        stroke-width: 1;
+    }
+    
+    .date-area {
+        background-color: whitesmoke;
+    }
+    
+    .button-raise {
+        float: right;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #75d0bf;
+    }
+</style>
+
+
+</html>
